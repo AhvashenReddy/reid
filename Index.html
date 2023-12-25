@@ -1,0 +1,55 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+
+
+<script type="text/javascript">
+    function refreshPage(t){
+
+setTimeout("location.reload(true);", t);
+
+}
+
+</script>
+
+
+
+<script type="text/javascript">
+var qrcode = new QRious({
+  element: document.getElementById("qrcode-2"),
+  background: '#ffffff',
+  backgroundAlpha: 1,
+  foreground: '#5868bf',
+  foregroundAlpha: 1,
+  level: 'H',
+  padding: 0,
+  size: 200,
+  value: website
+});
+</script>
+<script src="Script.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahvashen Reddy</title>
+    
+</head>
+<body onload= "JavaScript:refreshPage(1000);" style="  background: white;
+text-align: center;">
+    
+    <img src="Assets/The-Reid.png.webp" style="width: 50%;max-width: 500px;" >
+    <br>
+    <canvas id="qrcode" style="height: 300px; width: 300px;text-align: center;"></canvas>
+    <canvas id="qrcode-2"></canvas>
+    <script type="text/javascript">
+            new QRious({element: document.getElementById("qrcode"), value: "https://europe-west1-balwin-60c4a.cloudfunctions.net/qrcodeapi/guard?userId=Cy7AK9WdQigG6jDYEXdNGcEUeUz1&dtime="+new Date().getTime()+"&lat=&lon="});
+    
+
+    </script>
+    
+
+        
+</body>
+</html>
